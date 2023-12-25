@@ -8,9 +8,9 @@ let confirmDeleteBtn = document.getElementById('confirmDeleteBtn');
 let closeModal = document.getElementById('closeModal');
 let cancelDeleteBtn = document.getElementById('cancelDeleteBtn');
 
-
+let tokeen = prompt("Enter you token")
 let userText = null;
-let API_KEY = "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";
+let API_KEY = tokeen;
 
 const loadDataFromLocalstorage = () => {
     // Load saved chats and theme from local storage and apply/add on the page
