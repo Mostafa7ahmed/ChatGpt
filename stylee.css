@@ -18,6 +18,16 @@
     --outgoing-chat-border: #343541;
     --incoming-chat-border: #444654;
 }
+a {
+    font-size: 20px;
+    color: rgb(23, 158, 91);
+    text-decoration: none;
+    font-weight: bold;
+    margin: 10px 10px;
+    border: none;
+    border-radius: 10px;
+
+}
 
 .light-mode {
     --text-color: #343541;
