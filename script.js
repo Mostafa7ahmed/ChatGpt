@@ -62,8 +62,11 @@ const getChatResponse = async (incomingChatDiv) => {
         const response = await (await fetch(API_URL, requestOptions)).json();
         pElement.textContent = response.choices[0].text.trim();
     } catch (error) { // Add error class to the paragraph element and set error text
-        pElement.classList.add("error");
-        pElement.textContent = "Oops! Something went wrong while retrieving the response. Please try again.";
+        pElement.classList.add("error"); 
+       pElement.innerHTML = ` You didn't provide an API key. You need to provide your API key in an Authorization header using Bearer auth
+        (i.e. Authorization: Bearer YOUR_KEY), or as the password field (with blank username) if you're accessing the
+        API from your browser and are prompted for a username and password. You can obtain an API key from <a
+            href="https://platform.openai.com/account/api-keys">Go on</a>`;
     }
 
     // Remove the typing animation, append the paragraph element and save the chats to local storage
