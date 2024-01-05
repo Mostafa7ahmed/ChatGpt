@@ -8,7 +8,7 @@ let confirmDeleteBtn = document.getElementById('confirmDeleteBtn');
 let closeModal = document.getElementById('closeModal');
 let cancelDeleteBtn = document.getElementById('cancelDeleteBtn');
 
-let tokeen = prompt("Enter you token")
+let tokeen = prompt("Enter you token", "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")
 let userText = null;
 let API_KEY = tokeen;
 
