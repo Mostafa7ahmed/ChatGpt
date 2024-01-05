@@ -12,7 +12,7 @@ const storedApiKey = localStorage.getItem('api_key');
 const API_KEY = storedApiKey || "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";
 
 // Save the API key in localStorage
-localStorage.setItem('api_key', API_KEYy);
+localStorage.setItem('api_key', API_KEY);
 
 
 let userText = null;
