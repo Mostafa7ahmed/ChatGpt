@@ -9,10 +9,10 @@ let closeModal = document.getElementById('closeModal');
 let cancelDeleteBtn = document.getElementById('cancelDeleteBtn');
 
 const storedApiKey = localStorage.getItem('api_key');
-const api_key = storedApiKey || "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";
+const API_KEY = storedApiKey || "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";
 
 // Save the API key in localStorage
-localStorage.setItem('api_key', api_key);
+localStorage.setItem('api_key', API_KEYy);
 
 
 let userText = null;
