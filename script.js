@@ -8,10 +8,14 @@ let confirmDeleteBtn = document.getElementById('confirmDeleteBtn');
 let closeModal = document.getElementById('closeModal');
 let cancelDeleteBtn = document.getElementById('cancelDeleteBtn');
 
-let tokeen = prompt("Enter you token", "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")
-let userText = null;
-let API_KEY = tokeen;
+const storedApiKey = localStorage.getItem('api_key');
+const api_key = storedApiKey || "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";
 
+// Save the API key in localStorage
+localStorage.setItem('api_key', api_key);
+
+
+let userText = null;
 const loadDataFromLocalstorage = () => {
     // Load saved chats and theme from local storage and apply/add on the page
     const themeColor = localStorage.getItem("themeColor");
